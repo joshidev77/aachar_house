@@ -3,12 +3,15 @@ import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import ProductQuantityButton from "./Components/ProductQuantityButton";
+import ProductPage from "./Components/Product";
 
 function App() {
   return (
     <>
       <Header />
-      <ProductQuantityButton />
+      {/* <ProductQuantityButton /> */}
+      <ProductPage/>
+      
       <Footer />
     </>
   );
