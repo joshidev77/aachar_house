@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const ProductPage = () => {
   const [selectedSize, setSelectedSize] = useState('S');
-  const [selectedPrice, setSelectedPrice] = useState(10);
+  const [selectedPrice, setSelectedPrice] = useState(460);
   const [selectedQty, setSelectedQty] = useState(1);
 
   const handleSizeChange = (e) => {
@@ -24,25 +24,15 @@ const ProductPage = () => {
     <div className="product-page">
       <div className="product-image-container">
         <img src="Test.jpg" alt="Product Image" />
-        {/* <img src="Test.jpg" alt="Product Image" /> */}
       </div>
       <div className="product-details">
-        <h1>Product Name</h1>
-        <p>Price: ${selectedPrice}</p>
-        <label htmlFor="size-select">Size:</label>
+        <h1>Kachi Keri</h1>
+        <p>₹: {selectedPrice}/-</p>
+        {/* <label htmlFor="size-select">Size:</label>
         <select id="size-select" value={selectedSize} onChange={handleSizeChange}>
           <option value="S">Small</option>
           <option value="M">Medium</option>
-          <option value="L">Large</option>
-        </select>
-        <label htmlFor="qty-select">Quantity:</label>
-        <select id="qty-select" value={selectedQty} onChange={handleQtyChange}>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
+        </select><br></br> */}
         <button>Add to Cart</button>
       </div>
     </div>

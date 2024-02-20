@@ -6,12 +6,17 @@ import ProductQuantityButton from "./Components/ProductQuantityButton";
 import ProductPage from "./Components/Product";
 
 function App() {
+  constructor(props) {
+    super(props);
+    this.state={
+      users:[]
+    }
+  };
   return (
     <>
       <Header />
-      {/* <ProductQuantityButton /> */}
       <ProductPage/>
-      
+      {/* <ProductQuantityButton /> */}
       <Footer />
     </>
   );
