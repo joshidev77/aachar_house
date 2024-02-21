@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <>
       <nav className="navigation">
         <img src="logo.svg" className="imgsrc" alt="logo" />
         <label>Aachar<br/>House</label>
-        <a href="#">Home</a>
-        <a href="#">Cart</a>
-        <a href="#">Products</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
+        <Link to={'/home'}>Home</Link>
+        <Link to={'/cart'}>Cart</Link>
+        <Link to={'/product'}>Product</Link>
+        <Link to={'/contact'}>Contact</Link>
+        <Link to={'/about'}>About</Link>
       </nav>
     </>
   );

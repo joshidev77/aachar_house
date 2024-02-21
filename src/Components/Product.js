@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ProductPage = () => {
+const Product = () => {
   const [selectedSize, setSelectedSize] = useState('S');
   const [selectedPrice, setSelectedPrice] = useState(460);
   const [selectedQty, setSelectedQty] = useState(1);
@@ -20,6 +20,7 @@ const ProductPage = () => {
     setSelectedQty(e.target.value);
   };
 
+  console.log(selectedPrice);
   return (
     <div className="product-page">
       <div className="product-image-container">
@@ -39,4 +40,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default Product;
