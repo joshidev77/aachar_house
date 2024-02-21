@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Product = () => {
+const ProductPage = () => {
   const [selectedSize, setSelectedSize] = useState('S');
   const [selectedPrice, setSelectedPrice] = useState(460);
   const [selectedQty, setSelectedQty] = useState(1);
@@ -40,4 +40,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default ProductPage;
