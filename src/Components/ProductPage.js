@@ -2,18 +2,16 @@ import React, { useState } from 'react';
 
 const ProductPage = () => {
   const [selectedSize, setSelectedSize] = useState('S');
-  const [selectedPrice, setSelectedPrice] = useState(460);
+  const [selectedPrice, setSelectedPrice] = useState(250);
   const [selectedQty, setSelectedQty] = useState(1);
 
   const handleSizeChange = (e) => {
     setSelectedSize(e.target.value);
     if (e.target.value === 'S') {
-      setSelectedPrice(10);
+      setSelectedPrice(250);
     } else if (e.target.value === 'M') {
-      setSelectedPrice(15);
-    } else if (e.target.value === 'L') {
-      setSelectedPrice(20);
-    }
+      setSelectedPrice(460);
+    } 
   };
 
   const handleQtyChange = (e) => {
@@ -28,12 +26,12 @@ const ProductPage = () => {
       </div>
       <div className="product-details">
         <h1>Kachi Keri</h1>
-        <p>₹: {selectedPrice}/-</p>
-        {/* <label htmlFor="size-select">Size:</label>
+        <p>Price: {selectedPrice}/-</p>
+        <label htmlFor="size-select">Quantity</label>
         <select id="size-select" value={selectedSize} onChange={handleSizeChange}>
-          <option value="S">Small</option>
-          <option value="M">Medium</option>
-        </select><br></br> */}
+          <option value="S">500gm</option>
+          <option value="M">1kg</option>
+        </select>
         <button>Add to Cart</button>
       </div>
     </div>
