@@ -22,7 +22,7 @@ const ProductPage = () => {
   return (
     <div className="product-page">
       <div className="product-image-container">
-        <img src="Test.jpg" alt="Product Image" />
+        <img src="photoofP.jpg" alt="Product Image" />
       </div>
       <div className="product-details">
         <h1>Kachi Keri</h1>
