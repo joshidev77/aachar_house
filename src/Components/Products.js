@@ -22,12 +22,6 @@ const Products = () => {
         <ProductPage/>
         <ProductPage/>
         <ProductPage/>
-        <ProductPage/>
-        <ProductPage/>
-        <ProductPage/>
-        <ProductPage/>
-        <ProductPage/>
-        <ProductPage/>
     </div>
   )
 }
