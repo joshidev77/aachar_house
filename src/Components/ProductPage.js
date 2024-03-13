@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ProductPage = () => {
+const ProductPage = (props) => {
   const [selectedSize, setSelectedSize] = useState('S');
   const [selectedPrice, setSelectedPrice] = useState(250);
   const [selectedQty, setSelectedQty] = useState(1);
@@ -25,7 +25,7 @@ const ProductPage = () => {
         <img src="photoofP.jpg" alt="Product Image" />
       </div>
       <div className="product-details">
-        <h1>Kachi Keri</h1>
+        <h1>{props.name}</h1>
         <p>Price: {selectedPrice}/-</p>
         <label htmlFor="size-select">Quantity</label>
         <select id="size-select" value={selectedSize} onChange={handleSizeChange}>
