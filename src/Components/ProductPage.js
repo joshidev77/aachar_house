@@ -23,6 +23,7 @@ const ProductPage = ({ name, addToCart }) => {
     addToCart({
       name,
       price: selectedPrice,
+      size:selectedSize,
       quantity: selectedQty
     });
     console.log("Added to cart")
@@ -44,7 +45,7 @@ const ProductPage = ({ name, addToCart }) => {
           <option value="M">1kg</option>
         </select>
         <input type="number" value={selectedQty} onChange={handleQtyChange} />
-        <button className="product__btn" onClick={handleAddToCart}>Add to Cart</button>
+        <button className="btnnn" onClick={handleAddToCart}>Add to Cart</button>
       </div>
     </div>
   );
