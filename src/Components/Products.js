@@ -1,23 +1,24 @@
-import React from 'react'
-import ProductPage from './ProductPage'
+import React from 'react';
+import ProductPage from './ProductPage';
 
-const Products = () => {
+const Products = ({ addToCart }) => {
   return (
     <div className='product-showcase'>
-        <ProductPage name={"Kachi Keri"} image="" price=""/>
-        <ProductPage name={"Gunda Keri"} image="" price=""/>
-        <ProductPage name={"Methi Lasan"} image="" price=""/>
-        <ProductPage name={"Mix Punjabi"} image="" price=""/>
-        <ProductPage name={"Limbu"} image="" price=""/>
-        <ProductPage name={"Lasan"} image="" price=""/>
-        <ProductPage name={"Lila Marcha"} image="" price=""/>
-        <ProductPage name={"Lal Marcha"} image="" price=""/>
-        <ProductPage name={"Gaajar lasan"} image="" price=""/>
-        <ProductPage name={"Khata Amla"} image="" price=""/>
-        <ProductPage name={"Goud Keri"} image="" price=""/>
-        <ProductPage name={"Chundo"} image="" price=""/>
+      <ProductPage name={"Kachi Keri"} addToCart={addToCart} />
+      <ProductPage name={"Methi"} addToCart={addToCart} />
+      <ProductPage name={"Lasan"} addToCart={addToCart} />
+      <ProductPage name={"Akha Limbu"} addToCart={addToCart} />
+      <ProductPage name={"Amla"} addToCart={addToCart} />
+      <ProductPage name={"Chundo"} addToCart={addToCart} />
+      <ProductPage name={"Punjabi"} addToCart={addToCart} />
+      <ProductPage name={"Mix Khatmitha"} addToCart={addToCart} />
+      <ProductPage name={"Gunda Keri"} addToCart={addToCart} />
+      <ProductPage name={"Gunda Keri"} addToCart={addToCart} />
+      <ProductPage name={"Gunda Keri"} addToCart={addToCart} />
+      <ProductPage name={"Gunda Keri"} addToCart={addToCart} />
+      {/* Add other ProductPage instances similarly */}
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;

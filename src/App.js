@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import React,{ useState } from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import { Route, Routes } from "react-router-dom";
@@ -9,6 +10,12 @@ import About from "./Components/About";
 import Cart from "./Components/Cart";
 import Products from "./Components/Products";
 function App() {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (item) => {
+    setCart([...cart, item]);
+    console.log("addToCart")
+  };
   return (
     <>
       <Header />
@@ -17,8 +24,8 @@ function App() {
         <Route path="/home" element={<Home/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/about" element={<About/>}/>
-        <Route path="/product" element={<Products/>}/>
-        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/product" element={<Products addToCart={addToCart}/>}/>
+        <Route path="/cart" element={<Cart cart={cart}/>}/>
       </Routes>
       <Footer />
     </>
