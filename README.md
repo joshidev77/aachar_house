@@ -23,7 +23,7 @@ Aachar House is a web application built with React.js and Spring Boot that cater
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/Aachar-House.git
+git clone https://github.com/joshidev77/aachar_house.git
 
 ## Navigate to the project directory:
     cd Aachar-House
@@ -51,4 +51,4 @@ Open your browser and visit http://localhost:3000 to view the application.
 ## License
 This project is licensed under the MIT License.
 
-Feel free to adjust the content as needed, and don't forget to replace placeholders like `your-username` with actual details relevant to your project. Let me know if you need any further modifications or assistance!
+Feel free to adjust the content as needed, and don't forget to replace placeholders like `joshidev77` with actual details relevant to your project. Let me know if you need any further modifications or assistance!
